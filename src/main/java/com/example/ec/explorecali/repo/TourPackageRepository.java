@@ -5,8 +5,6 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import org.springframework.data.rest.core.annotation.RestResource;
 
-import java.util.Optional;
-
 /**
  * Tour Package Repository Interface
  */
@@ -18,7 +16,7 @@ public interface TourPackageRepository extends CrudRepository<TourPackage, Strin
      * @param name name of the package
      * @return Optional of TourPackage
      */
-    Optional<TourPackage> findByName(String name);
+    TourPackage findByName(String name);
 
     @Override
     @RestResource(exported = false)
