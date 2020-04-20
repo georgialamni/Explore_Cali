@@ -20,7 +20,7 @@ public class TourRating {
     /**
      * Create a fully initialized TourRating.
      *
-     * @param pk         primiary key of a tour and customer id.
+     * @param pk         primary key of a tour and customer id.
      * @param score      Integer score (1-5)
      * @param comment    Optional comment from the customer
      */
